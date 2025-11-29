@@ -56,18 +56,6 @@ game_master = LlmAgent(
 )
 
 root_agent = game_master
-
-async def main():
-    from google.adk.runners import InMemoryRunner
-    runner = InMemoryRunner(agent=world_builder)
-    response = await runner.run_debug(
-    "Create a steampunk world"
-    )
-    print(response)
-
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())
     
     
 

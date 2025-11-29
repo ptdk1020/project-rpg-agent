@@ -1,0 +1,24 @@
+{
+    "eval_set_id": "rpg_agent_test",
+    "eval_cases": [
+        {
+            "eval_id": "num_events_test",
+            "conversation": [
+                {
+                    "user_content": {
+                        "parts": [
+                            {"text": "Hello, I want to play a new steampunk world. Please create a random character, then a random adventure. How many events does the adventure plan have? Answer only with the number"}
+                        ]
+                    },
+                    "final_response": {
+                        "parts": [
+                            {
+                                "text": "5"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

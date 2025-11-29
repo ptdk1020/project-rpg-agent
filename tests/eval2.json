@@ -1,0 +1,35 @@
+{
+    "eval_set_id": "rpg_agent_test",
+    "eval_cases": [
+        {
+            "eval_id": "save_userinfo_test",
+            "conversation": [
+                {
+                    "user_content": {
+                        "parts": [
+                            {"text": "Hello,my name is random_user. I last played in the random_world setting, Can you save my profile? Answer DONE once completed"}
+                        ]
+                    },
+                    "final_response": {
+                        "parts": [
+                            {
+                                "text": "DONE"
+                            }
+                        ]
+                    },
+                    "intermediate_data": {
+                        "tool_uses": [
+                            {
+                                "name": "save_userinfo",
+                                "args": {
+                                    "user_name" : "random_user", 
+                                    "last_setting_played" : "random_world"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

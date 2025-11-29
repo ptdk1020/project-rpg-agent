@@ -1,3 +1,9 @@
+# folder name for my own chromadb data
+_chromadata/ 
+
+# adk eval
+.adk/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
